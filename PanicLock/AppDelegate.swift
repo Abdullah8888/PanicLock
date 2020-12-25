@@ -12,15 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = ViewController(nibName: "ViewController", bundle: nil)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let vc = CreateSavePinViewController(nibName: "CreateSavePinViewController", bundle: nil)
         let rootVC = UINavigationController(rootViewController: vc)
         
-        window.rootViewController = rootVC
-        window.makeKeyAndVisible()
+        window?.rootViewController = rootVC
+        window?.makeKeyAndVisible()
         return true
     }
 

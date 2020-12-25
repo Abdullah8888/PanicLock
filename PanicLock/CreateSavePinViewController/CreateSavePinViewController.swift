@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CreateSavePinViewController.swift
 //  PanicLock
 //
 //  Created by Jimoh Babatunde Olalekan on 25/12/2020.
@@ -8,14 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CreateSavePinViewController: UIViewController {
+    @IBOutlet weak var dd: UILabel?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("this is first view")
+        print("This is first")
     }
 
-
 }
-
