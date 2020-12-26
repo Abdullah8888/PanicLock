@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         let vc = CreateSavePinViewController(nibName: "CreateSavePinViewController", bundle: nil)
-        let rootVC = UINavigationController(rootViewController: vc)
+        _ = UINavigationController(rootViewController: vc)
         
-        window?.rootViewController = rootVC
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
         return true
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -43,14 +43,28 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-IP-Bif" userLabel="fourth_view">
-                            <rect key="frame" x="0.0" y="150" width="414" height="578"/>
+                            <rect key="frame" x="0.0" y="150" width="414" height="598"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45e-1c-sht" userLabel="content_view">
+                                    <rect key="frame" x="20" y="0.0" width="374" height="400"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="400" id="8RQ-Ip-E6L"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="45e-1c-sht" firstAttribute="leading" secondItem="WoL-IP-Bif" secondAttribute="leading" constant="20" id="Dg4-SK-8ZA"/>
+                                <constraint firstItem="45e-1c-sht" firstAttribute="top" secondItem="WoL-IP-Bif" secondAttribute="top" id="PMC-v1-gGE"/>
+                                <constraint firstAttribute="trailing" secondItem="45e-1c-sht" secondAttribute="trailing" constant="20" id="Wqz-w5-52k"/>
+                            </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwS-1h-azX" userLabel="fifth_view">
-                            <rect key="frame" x="0.0" y="728" width="414" height="90"/>
+                            <rect key="frame" x="0.0" y="748" width="414" height="70"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="90" id="AHZ-9o-ka2"/>
+                                <constraint firstAttribute="height" constant="70" id="AHZ-9o-ka2"/>
                             </constraints>
                         </view>
                     </subviews>
